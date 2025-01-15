@@ -116,8 +116,8 @@
       [self loadUrl:initialUrl];
     }
 	
-	NSNumber* transparentEnabled = args[@"transparentBackground"];
-	if([transparentEnabled boolValue]){
+    id transparentEnabled = args[@"transparentBackground"];
+	if(transparentEnabled != [NSNull null]  && [transparentEnabled boolValue]){
 	   _webView.opaque = NO;
 	   _webView.backgroundColor = UIColor.clearColor;
 	}
