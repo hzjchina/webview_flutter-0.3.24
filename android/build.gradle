@@ -26,6 +26,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace = "io.flutter.plugins.webviewflutter"
     compileSdkVersion 28
 
     defaultConfig {
